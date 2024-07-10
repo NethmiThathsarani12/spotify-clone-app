@@ -3,6 +3,7 @@ import React from 'react'
 import LoadigPage from '@/components/pages/LoadingPage/LoadingPage';
 import LoggingPage from '@/components/pages/LoggingPage/LoggingPage';
 import SearchPage from '@/components/pages/SearchPage/SearchPage';
+import HomePage from '@/components/pages/HomePage/HomePage';
 
 
 export default function index() {
@@ -10,7 +11,8 @@ export default function index() {
     <View style= {styles.container}>
       {/* <LoadigPage/> */}
       {/* <LoggingPage/> */}
-      <SearchPage/>
+      {/* <SearchPage/> */}
+      <HomePage/>
   </View>
   )
 }
