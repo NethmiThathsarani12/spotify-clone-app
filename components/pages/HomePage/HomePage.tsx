@@ -29,6 +29,59 @@ export default function HomePage() {
         <Text style={styles.imageText}>Catch the Letest Playlist{'\n'}made jus for you....</Text>
       </View>
       <Text style={styles.baseText2}>Trending now</Text>
+
+      <View style={styles.imageContainer3}>
+        <Image
+          style={styles.tinyLogo3}
+          source={require('../../../assets/images/Babyimages.jpg')}
+        />
+        <Text style={styles.imageText}>Believe</Text>
+        
+      </View>
+      <View style={styles.imageContainer4}>
+        <Image
+          style={styles.tinyLogo3}
+          source={require('../../../assets/images/EdPerfect.jpg')}
+        />
+        <Text style={styles.imageText}>Perfect</Text>
+        
+      </View>
+
+      <View style={styles.imageContainer5}>
+        <Image
+          style={styles.tinyLogo3}
+          source={require('../../../assets/images/Loveimages.jpg')}
+        />
+        <Text style={styles.imageText}>Love me like u</Text>
+        
+      </View>
+      <Text style={styles.baseText3}>Populor Artist</Text>
+
+      <View style={styles.imageContainer6}>
+        <Image
+          style={styles.tinyLogo4}
+          source={require('../../../assets/images/KPimages.png')}
+        />
+      </View>
+      <View style={styles.imageContainer7}>
+        <Image
+          style={styles.tinyLogo4}
+          source={require('../../../assets/images/ASimages.jpg')}
+        />   
+      </View>
+      <View style={styles.imageContainer8}>
+        <Image
+          style={styles.tinyLogo4}
+          source={require('../../../assets/images/SGimages.jpg')}
+        />
+        
+      </View>
+      <View style={styles.bottomIcons}>
+        <Ionicons name="home" size={24} color="white" style={styles.icons} />
+        <Ionicons name="search" size={24} color="white" style={styles.icons} />
+        <Ionicons name="library" size={24} color="white" style={styles.icons} />
+        <Ionicons name="musical-notes" size={24} color="white" style={styles.icons} />
+      </View>
     </View>
   );
 }
@@ -54,6 +107,15 @@ const styles = StyleSheet.create({
     fontSize: 30,
     position: 'absolute',
     top: 320,
+    right: 10,
+
+  },
+  baseText3:{
+    fontWeight: 'bold',
+    color: 'white',
+    fontSize: 30,
+    position: 'absolute',
+   bottom:180,
     right: 10,
 
   },
@@ -91,5 +153,62 @@ const styles = StyleSheet.create({
     color: 'white',
     fontSize: 16,
     marginTop: 10, 
+  },
+  imageContainer3:{
+    position: 'absolute',
+   bottom:230,
+    right: 70,
+    alignItems: 'center', 
+  },
+  imageContainer4:{
+    position: 'absolute',
+    bottom:230,
+    left: -46,
+    alignItems: 'center', 
+  },
+  tinyLogo3:{
+    width:100,
+    height:100,
+  },
+  imageContainer5:{
+    position: 'absolute',
+    bottom:230,
+    left:80,
+    alignItems: 'center',
+  },
+  imageContainer6:{
+    position: 'absolute',
+     top:560,
+    right: 70,
+    alignItems: 'center', 
+    
+    
+  },
+  imageContainer7:{
+    position: 'absolute',
+    bottom:66,
+    left: -46,
+    alignItems: 'center', 
+  },
+  imageContainer8:{
+    position: 'absolute',
+    bottom:66,
+    left:80,
+    alignItems: 'center',
+  },
+  tinyLogo4:{
+    width:100,
+    height:100,
+    borderRadius: 80,
+  },
+  bottomIcons: {
+    position: 'absolute',
+    bottom: 20,
+    flexDirection: 'row',
+    justifyContent: 'space-around',
+    width: '100%',
+  },
+  icons: {
+    marginRight: 20,
   },
 });
