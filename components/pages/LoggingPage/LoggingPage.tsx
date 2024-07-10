@@ -1,4 +1,4 @@
-import { View,Text, StyleSheet, Image, Button, Alert } from 'react-native'
+import { View,Text, StyleSheet, Image,TouchableOpacity , Alert } from 'react-native'
 import React from 'react'
 
 export default function LoggingPage() {
@@ -30,13 +30,40 @@ export default function LoggingPage() {
       
     </Text>
 
-    <View style={style.buttonWrapper}>
-        <Button
-          title="Press me"
-          color="green"
-          onPress={() => Alert.alert('Button with adjusted color pressed')}
-        />
+    <View>
+    <TouchableOpacity
+        style={style.buttonWrapper}
+        onPress={() => Alert.alert('Button with adjusted color pressed')}
+      >
+        <Text style={style.buttonText}>Sign in free</Text>
+      </TouchableOpacity>
+
+      <TouchableOpacity
+        style={style.buttonGoogleWrapper}
+        onPress={() => Alert.alert('Button with adjusted color pressed')}
+      >
+        <Text style={style.buttonTextGoogle}>Continue with phone number</Text>
+      </TouchableOpacity>
+      <TouchableOpacity
+        style={style.buttonGoogleWrapper}
+        onPress={() => Alert.alert('Button with adjusted color pressed')}
+      >
+        <Text style={style.buttonTextGoogle}>Continue with Google</Text>
+      </TouchableOpacity>
+      <TouchableOpacity
+        style={style.buttonGoogleWrapper}
+        onPress={() => Alert.alert('Button with adjusted color pressed')}
+      >
+        <Text style={style.buttonTextGoogle}>Continue with Facebook</Text>
+      </TouchableOpacity>
+
+      
       </View>
+
+      <Text style={[style.baseText, style.loginText]}>
+        <Text style={style.innerText}>Login</Text>
+      </Text>
+      
   </View>
   )
 }
@@ -67,9 +94,39 @@ const style = StyleSheet.create({
       },
 
       buttonWrapper: {
-        width: 340, 
-        height:100,
-        marginTop: 20,  
+        width: 340,
+        height: 46,
+        marginTop: 20,
+        justifyContent: 'center',
+        alignItems: 'center',
+        backgroundColor: 'green',
+        borderRadius: 25,
+      },
+      buttonText: {
+        color: 'white',
+        fontSize: 24,
+        fontWeight: 'bold',
+      },
+
+      buttonGoogleWrapper:{
+        width: 340,
+        height: 50,
+        marginTop: 20,
+        justifyContent: 'center',
+        alignItems: 'center',
+        backgroundColor: 'black',
+        borderRadius: 25,
+        borderColor: 'white',  
+        borderWidth: 2,
+
+      },
+      buttonTextGoogle:{
+        color: 'white',
+        fontSize: 20,
+        fontWeight: 'bold',
+      },
+      loginText: {
+        marginTop: 30, 
       },
       
   
