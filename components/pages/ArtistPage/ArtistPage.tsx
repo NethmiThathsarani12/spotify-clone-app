@@ -106,6 +106,7 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
     marginTop: 14,
+    marginRight: 140,
   },
   followButton: {
     backgroundColor: 'black',

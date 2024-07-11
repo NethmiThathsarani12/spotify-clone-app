@@ -1,6 +1,7 @@
 import { View, Text, StyleSheet, Image } from 'react-native';
 import React from 'react';
 import { Ionicons } from '@expo/vector-icons';
+import data from '../../../data/data.json'
 
 export default function HomePage() {
   return (

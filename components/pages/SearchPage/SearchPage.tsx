@@ -1,6 +1,18 @@
-import { View, Text, StyleSheet, TextInput } from 'react-native';
+import { View, Text, StyleSheet, TextInput, ScrollView } from 'react-native';
 import React, { useState } from 'react';
 import { Ionicons } from '@expo/vector-icons';
+
+const categories = [
+  { id: 1, name: 'Pop', color: 'lightblue' },
+  { id: 2, name: 'Rock', color: 'lightgreen' },
+  { id: 3, name: 'Hip-Hop', color: 'green' },
+  { id: 4, name: 'Jazz', color: 'purple' },
+  { id: 5, name: 'Classical', color: 'pink' },
+  { id: 6, name: 'Electronic', color: 'darkblue' },
+  { id: 7, name: 'Country', color: 'red' },
+  { id: 8, name: 'Reggae', color: 'blue' }
+  
+];
 
 export default function SearchPage() {
   const [searchText, setSearchText] = useState('');
@@ -19,34 +31,13 @@ export default function SearchPage() {
         />
       </View>
       <Text style={styles.browseText}>Browse All</Text>
-      
-      <View style={styles.colorContainer}>
-        <View style={[styles.colorDiv, styles.div1]}>
-          <Text style={styles.divText}>Pop</Text>
-        </View>
-        <View style={[styles.colorDiv, styles.div2]}>
-          <Text style={styles.divText}>Rock</Text>
-        </View>
-        <View style={[styles.colorDiv, styles.div3]}>
-          <Text style={styles.divText}>Hip-Hop</Text>
-        </View>
-        <View style={[styles.colorDiv, styles.div4]}>
-          <Text style={styles.divText}>Jazz</Text>
-        </View>
-        <View style={[styles.colorDiv, styles.div5]}>
-          <Text style={styles.divText}>Classical</Text>
-        </View>
-        <View style={[styles.colorDiv, styles.div6]}>
-          <Text style={styles.divText}>Electronic</Text>
-        </View>
-        <View style={[styles.colorDiv, styles.div7]}>
-          <Text style={styles.divText}>Country</Text>
-        </View>
-        <View style={[styles.colorDiv, styles.div8]}>
-          <Text style={styles.divText}>Reggae</Text>
-        </View>
-      </View>
-
+      <ScrollView style={styles.scrollView} contentContainerStyle={styles.colorContainer}>
+        {categories.map((category) => (
+          <View key={category.id} style={[styles.colorDiv, { backgroundColor: category.color }]}>
+            <Text style={styles.divText}>{category.name}</Text>
+          </View>
+        ))}
+      </ScrollView>
       <View style={styles.bottomIcons}>
         <Ionicons name="home" size={24} color="white" style={styles.icon} />
         <Ionicons name="search" size={24} color="white" style={styles.icon} />
@@ -60,9 +51,8 @@ export default function SearchPage() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
     backgroundColor: '#000000',
+    alignItems: 'center',
   },
   baseText: {
     fontWeight: 'bold',
@@ -70,7 +60,7 @@ const styles = StyleSheet.create({
     fontSize: 30,
     position: 'absolute',
     top: 20,
-    right: 80,
+    right: 260,
   },
   searchContainer: {
     position: 'absolute',
@@ -98,15 +88,17 @@ const styles = StyleSheet.create({
     fontSize: 26,
     position: 'absolute',
     top: 140,
-    right: 40,
+    right: 230,
+  },
+  scrollView: {
+    width: '100%',
+    marginTop: 200, 
   },
   colorContainer: {
-    position: 'absolute',
-    top: 200, 
-    width: '90%',
     flexDirection: 'row',
     flexWrap: 'wrap',
     justifyContent: 'space-around',
+    paddingBottom: 100, // Add padding to bottom for scroll
   },
   colorDiv: {
     width: '45%',
@@ -116,38 +108,10 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
   },
-  div1: {
-    backgroundColor: 'lightblue',
-  },
-  div2: {
-    backgroundColor: 'lightgreen',
-  },
-  div3: {
-    backgroundColor: 'green',
-  },
-  div4: {
-    backgroundColor: 'purple',
-  },
-  div5: {
-    backgroundColor: 'pink',
-  },
-  div6: {
-    backgroundColor: 'darkblue',
-  },
-  div7: {
-    backgroundColor: 'red',
-  },
-  div8: {
-    backgroundColor: 'blue',
-  },
   divText: {
     color: 'white',
     fontSize: 20,
     fontWeight: 'bold',
-    position: 'absolute',
-    top: 10,
-    right: 50,
-    left: 10,
   },
   bottomIcons: {
     position: 'absolute',
@@ -157,6 +121,6 @@ const styles = StyleSheet.create({
     width: '100%',
   },
   icon: {
-    marginRight: 20,
+    marginHorizontal: 20,
   },
 });

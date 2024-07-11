@@ -1,0 +1,51 @@
+{
+  "sections": [
+    {
+      "title": "Made for you",
+      "items": [
+        {
+          "image": "../../../assets/images/Edimages.jpg",
+          "text": "Ed Sheeran, Katy Perry\nPitbull and more"
+        },
+        {
+          "image": "../../../assets/images/JBimages.jpg",
+          "text": "Catch the Latest Playlist\nmade just for you...."
+        }
+      ]
+    },
+    {
+      "title": "Trending now",
+      "items": [
+        {
+          "image": "../../../assets/images/Babyimages.jpg",
+          "text": "Believe"
+        },
+        {
+          "image": "../../../assets/images/EdPerfect.jpg",
+          "text": "Perfect"
+        },
+        {
+          "image": "../../../assets/images/Loveimages.jpg",
+          "text": "Love me like u"
+        }
+      ]
+    },
+    {
+      "title": "Popular Artist",
+      "items": [
+        {
+          "image": "../../../assets/images/KPimages.png",
+          "text": ""
+        },
+        {
+          "image": "../../../assets/images/ASimages.jpg",
+          "text": ""
+        },
+        {
+          "image": "../../../assets/images/SGimages.jpg",
+          "text": ""
+        }
+      ]
+    }
+  ]
+}

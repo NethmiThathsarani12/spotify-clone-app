@@ -5,6 +5,7 @@ import LoggingPage from '@/components/pages/LoggingPage/LoggingPage';
 import SearchPage from '@/components/pages/SearchPage/SearchPage';
 import HomePage from '@/components/pages/HomePage/HomePage';
 import ArtistPage from '@/components/pages/ArtistPage/ArtistPage';
+import LoginPage2 from '@/components/pages/LoginPage2/LoginPage2';
 
 
 export default function index() {
@@ -14,7 +15,8 @@ export default function index() {
       {/* <LoggingPage/> */}
       {/* <SearchPage/> */}
       {/* <HomePage/> */}
-      <ArtistPage/>
+      {/* <ArtistPage/> */}
+      <LoginPage2/>
   </View>
   )
 }
