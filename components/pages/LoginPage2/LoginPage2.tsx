@@ -6,7 +6,6 @@ export default function LoginPage2() {
   const [password, setPassword] = useState('');
 
   const handleLogin = () => {
-    // Handle the login action (e.g., validate credentials, navigate to another page, etc.)
     console.log('Username:', username);
     console.log('Password:', password);
   };
