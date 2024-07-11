@@ -12,11 +12,11 @@ export default function index() {
   return (
     <View style= {styles.container}>
       {/* <LoadigPage/> */}
-      {/* <LoggingPage/> */}
+      <LoggingPage/>
       {/* <SearchPage/> */}
       {/* <HomePage/> */}
       {/* <ArtistPage/> */}
-      <LoginPage2/>
+      {/* <LoginPage2/> */}
   </View>
   )
 }
