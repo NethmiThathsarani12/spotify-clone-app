@@ -19,6 +19,19 @@ export default function ArtistPage() {
           <Ionicons name="play-circle" size={52} color="green" style={styles.playIcon} />
         </View>
       </View>
+      <Text style={styles.baseText}>Popular</Text>
+      <View style={styles.popularContainer}>
+        <Text style={styles.rankText}>1</Text>
+        <Image
+          style={styles.popularImage}
+          source={require('../../../assets/images/SGimages.jpg')}
+        />
+        <View style={styles.textContainer}>
+          <Text style={styles.songTitle}>Shape of You</Text>
+          <Text style={styles.songArtist}>Ed Sheeran</Text>
+        </View>
+        <Ionicons name="ellipsis-vertical" size={24} color="white" style={styles.popularMoreIcon} />
+      </View>
     </View>
   )
 }
@@ -70,5 +83,45 @@ const styles = StyleSheet.create({
     },
     playIcon: {
       marginLeft: 120, 
+    },
+    baseText: {
+      fontWeight: 'bold',
+      color: 'white',
+      fontSize: 22,
+      position: 'absolute',
+      bottom: 280,
+      right: 90,
+    },
+    popularContainer: {
+      flexDirection: 'row',
+      alignItems: 'center',
+      position: 'absolute',
+      bottom: 210,
+      right: -20,
+    },
+    rankText: {
+      color: 'white',
+      fontSize: 20,
+      marginRight: 10,
+    },
+    popularImage: {
+      width: 60,
+      height: 60,
+    },
+    textContainer: {
+      marginLeft: 10,
+    },
+    songTitle: {
+      color: 'white',
+      fontSize: 18,
+      fontWeight: 'bold',
+    },
+    songArtist: {
+      color: 'gray',
+      fontSize: 16,
+    },
+    popularMoreIcon: {
+      position: 'absolute',
+     left:300,
     },
 })
