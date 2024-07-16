@@ -1,50 +1,12 @@
-# Welcome to your Expo app 👋
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+![page1](https://github.com/NethmiThathsarani12/spotify-clone-app/assets/125720772/70ccd3db-5734-4298-9a84-b41888580c0b)
 
-## Get started
+![page2](https://github.com/NethmiThathsarani12/spotify-clone-app/assets/125720772/5591ff90-eb22-483e-9997-55b182e01dc9)
 
-1. Install dependencies
+![page3](https://github.com/NethmiThathsarani12/spotify-clone-app/assets/125720772/6d3bb506-8c2c-4a3a-ac8c-812f9e48986b)
 
-   ```bash
-   npm install
-   ```
+![page4](https://github.com/NethmiThathsarani12/spotify-clone-app/assets/125720772/b4aef9da-bb88-4c63-9248-70d329484be6)
 
-2. Start the app
+![page5](https://github.com/NethmiThathsarani12/spotify-clone-app/assets/125720772/6ac47d62-1bab-4909-a545-6224bd052bbf)
 
-   ```bash
-    npx expo start
-   ```
-
-In the output, you'll find options to open the app in a
-
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
-
-```bash
-npm run reset-project
-```
-
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
-
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+![page6](https://github.com/NethmiThathsarani12/spotify-clone-app/assets/125720772/d90f2fe8-d505-4504-9046-f07ed542048c)
