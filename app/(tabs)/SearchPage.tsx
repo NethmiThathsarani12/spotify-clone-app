@@ -38,12 +38,7 @@ export default function SearchPage() {
           </View>
         ))}
       </ScrollView>
-      <View style={styles.bottomIcons}>
-        <Ionicons name="home" size={24} color="white" style={styles.icon} />
-        <Ionicons name="search" size={24} color="white" style={styles.icon} />
-        <Ionicons name="library" size={24} color="white" style={styles.icon} />
-        <Ionicons name="musical-notes" size={24} color="white" style={styles.icon} />
-      </View>
+    
     </View>
   );
 }

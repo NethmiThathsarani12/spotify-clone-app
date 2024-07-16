@@ -1,5 +1,6 @@
 import { View, Text, TextInput, Image, StyleSheet, TouchableOpacity } from 'react-native'
 import React, { useState } from 'react'
+import { router } from 'expo-router';
 
 export default function LoginPage2() {
   const [username, setUsername] = useState('');
@@ -33,7 +34,7 @@ export default function LoginPage2() {
         value={password}
         onChangeText={setPassword}
       />
-      <TouchableOpacity style={styles.loginButton} onPress={handleLogin}>
+      <TouchableOpacity style={styles.loginButton} onPress={()=>router.push('/HomePage')}>
         <Text style={styles.loginButtonText}>Login</Text>
       </TouchableOpacity>
     </View>

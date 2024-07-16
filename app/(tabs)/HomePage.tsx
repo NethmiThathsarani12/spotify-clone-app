@@ -1,7 +1,7 @@
 import { View, Text, StyleSheet, Image } from 'react-native';
 import React from 'react';
 import { Ionicons } from '@expo/vector-icons';
-import data from '../../../data/data.json'
+// import data from '../../../data/data.json'
 
 export default function HomePage() {
   return (
@@ -16,7 +16,7 @@ export default function HomePage() {
       <View style={styles.imageContainer}>
         <Image
           style={styles.tinyLogo}
-          source={require('../../../assets/images/Edimages.jpg')}
+          source={require('../../assets/images/Edimages.jpg')}
         />
         <Text style={styles.imageText}>Ed Sheeran, Katy perry{'\n'}Pitbull and more</Text>
         
@@ -25,7 +25,7 @@ export default function HomePage() {
       <View style={styles.imageContainer2}>
         <Image
           style={styles.tinyLogo2}
-          source={require('../../../assets/images/JBimages.jpg')}
+          source={require('../../assets/images/JBimages.jpg')}
         />
         <Text style={styles.imageText}>Catch the Letest Playlist{'\n'}made jus for you....</Text>
       </View>
@@ -34,7 +34,7 @@ export default function HomePage() {
       <View style={styles.imageContainer3}>
         <Image
           style={styles.tinyLogo3}
-          source={require('../../../assets/images/Babyimages.jpg')}
+          source={require('../../assets/images/Babyimages.jpg')}
         />
         <Text style={styles.imageText}>Believe</Text>
         
@@ -42,7 +42,7 @@ export default function HomePage() {
       <View style={styles.imageContainer4}>
         <Image
           style={styles.tinyLogo3}
-          source={require('../../../assets/images/EdPerfect.jpg')}
+          source={require('../../assets/images/EdPerfect.jpg')}
         />
         <Text style={styles.imageText}>Perfect</Text>
         
@@ -51,7 +51,7 @@ export default function HomePage() {
       <View style={styles.imageContainer5}>
         <Image
           style={styles.tinyLogo3}
-          source={require('../../../assets/images/Loveimages.jpg')}
+          source={require('../../assets/images/Loveimages.jpg')}
         />
         <Text style={styles.imageText}>Love me like u</Text>
         
@@ -61,28 +61,28 @@ export default function HomePage() {
       <View style={styles.imageContainer6}>
         <Image
           style={styles.tinyLogo4}
-          source={require('../../../assets/images/KPimages.png')}
+          source={require('../../assets/images/KPimages.png')}
         />
       </View>
       <View style={styles.imageContainer7}>
         <Image
           style={styles.tinyLogo4}
-          source={require('../../../assets/images/ASimages.jpg')}
+          source={require('../../assets/images/ASimages.jpg')}
         />   
       </View>
       <View style={styles.imageContainer8}>
         <Image
           style={styles.tinyLogo4}
-          source={require('../../../assets/images/SGimages.jpg')}
+          source={require('../../assets/images/SGimages.jpg')}
         />
         
       </View>
-      <View style={styles.bottomIcons}>
+      {/* <View style={styles.bottomIcons}>
         <Ionicons name="home" size={24} color="white" style={styles.icons} />
         <Ionicons name="search" size={24} color="white" style={styles.icons} />
         <Ionicons name="library" size={24} color="white" style={styles.icons} />
         <Ionicons name="musical-notes" size={24} color="white" style={styles.icons} />
-      </View>
+      </View> */}
     </View>
   );
 }

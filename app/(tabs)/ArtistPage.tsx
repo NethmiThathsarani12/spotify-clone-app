@@ -7,31 +7,31 @@ const songs = [
     id: 1,
     title: 'Shape of You',
     artist: 'Ed Sheeran',
-    image: require('../../../assets/images/Edimages.jpg')
+    image: require('../../assets/images/Edimages.jpg')
   },
   {
     id: 2,
     title: 'Perfect',
     artist: 'Ed Sheeran',
-    image: require('../../../assets/images/Edimages.jpg')
+    image: require('../../assets/images/Edimages.jpg')
   },
   {
     id: 3,
     title: 'Thinking Out Loud',
     artist: 'Ed Sheeran',
-    image: require('../../../assets/images/Edimages.jpg')
+    image: require('../../assets/images/Edimages.jpg')
   },
   {
     id: 4,
     title: 'Thinking Out Loud',
     artist: 'Ed Sheeran',
-    image: require('../../../assets/images/Edimages.jpg')
+    image: require('../../assets/images/Edimages.jpg')
   },
   {
     id: 5,
     title: 'Thinking Out Loud',
     artist: 'Ed Sheeran',
-    image: require('../../../assets/images/Edimages.jpg')
+    image: require('../../assets/images/Edimages.jpg')
   }
   
 ]
@@ -42,7 +42,8 @@ export default function ArtistPage() {
       <View style={styles.imageContainer}>
         <Image
           style={styles.tinyLogo}
-          source={require('../../../assets/images/Edimages.jpg')}
+          source={require('../../assets/images/Edimages.jpg')}
+          // source={require('../../../assets/images/Edimages.jpg')}
         />
         <Text style={styles.imageText}>28.5K monthly listener</Text>
         <View style={styles.buttonContainer}>
@@ -70,12 +71,7 @@ export default function ArtistPage() {
           </View>
         ))}
       </ScrollView>
-      <View style={styles.bottomIcons}>
-        <Ionicons name="home" size={24} color="white" style={styles.icons} />
-        <Ionicons name="search" size={24} color="white" style={styles.icons} />
-        <Ionicons name="library" size={24} color="white" style={styles.icons} />
-        <Ionicons name="musical-notes" size={24} color="white" style={styles.icons} />
-      </View>
+    
     </View>
   )
 }
@@ -166,13 +162,7 @@ const styles = StyleSheet.create({
   popularMoreIcon: {
     marginLeft: 10,
   },
-  bottomIcons: {
-    position: 'absolute',
-    bottom: 20,
-    flexDirection: 'row',
-    justifyContent: 'space-around',
-    width: '100%',
-  },
+ 
   icons: {
     marginHorizontal: 20,
   },
